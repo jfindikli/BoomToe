@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>BoomToe 4×4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Audio assets -->
+  <audio id="clickSound" src="audio/click.wav" preload="auto"></audio>
+  <audio id="explosionSound" src="audio/explosion.wav" preload="auto"></audio>
+  <audio id="victorySound" src="audio/victory.wav" preload="auto"></audio>
+
+  
+  
+  <audio id="victorySound" src="audio/victory.wav" preload="auto"></audio>
+  <audio id="clickSound" src="audio/click.wav" preload="auto"></audio>
+
+  <div class="container">
+    <h1>BoomToe 4×4</h1>
+    <div class="settings">
+      <label for="bombCount">Mines:</label>
+      <select id="bombCount">
+        <option value="2">Easy (2)</option>
+        <option value="4" selected>Medium (4)</option>
+        <option value="6">Hard (6)</option>
+      </select>
+    </div>
+    <div id="grid"></div>
+    <div class="controls">
+      <button id="reset">Reset Game</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
