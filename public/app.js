@@ -114,7 +114,6 @@ function renderGrid(revealAll=false) {
         cell.textContent = tile.claimed;
       }
       cell.classList.add('revealed');
-      cell.classList.add('revealed');
     } else {
       cell.addEventListener('click', onCellClick);
     }
